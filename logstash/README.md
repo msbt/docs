@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `logstash` official image](https://hub.docker.com/_/logstash) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -27,6 +29,8 @@ WARNING:
 -	[`8.1.1`](https://github.com/docker-library/logstash/blob/abf29e781b1f12a93460376601d8b1864acd20f1/8/Dockerfile)
 -	[`7.17.1`](https://github.com/docker-library/logstash/blob/03c6a42b2a7dcca6d4346b0b73e95d2a25aea819/7/Dockerfile)
 -	[`6.8.23`](https://github.com/docker-library/logstash/blob/4c31d4c6b43c303275256545b5ac5111afa0f2e1/6/Dockerfile)
+
+[![amd64/logstash build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/logstash.svg?label=amd64/logstash%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/logstash/)
 
 # Quick reference (cont.)
 
