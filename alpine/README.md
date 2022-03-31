@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `alpine` official image](https://hub.docker.com/_/alpine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20220328`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/216cb26780d883acfedc156200bb520f45d170d5/x86_64/Dockerfile)
--	[`3.15.3`, `3.15`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/d44f831f0e99ace2b6d9d59b9123de27fd061a0f/x86_64/Dockerfile)
--	[`3.14.5`, `3.14`](https://github.com/alpinelinux/docker-alpine/blob/06e90a96650dc17f6d8f66655d3914c6dc25a0b4/x86_64/Dockerfile)
--	[`3.13.9`, `3.13`](https://github.com/alpinelinux/docker-alpine/blob/ed36cc54c3083ad4f1a84b2c8f63431cca2768cb/x86_64/Dockerfile)
--	[`3.12.11`, `3.12`](https://github.com/alpinelinux/docker-alpine/blob/e96e8f65de007ba5ba379f5e282750250df404f4/x86_64/Dockerfile)
+-	[`20220328`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/216cb26780d883acfedc156200bb520f45d170d5/riscv64/Dockerfile)
+
+[![riscv64/alpine build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/alpine.svg?label=riscv64/alpine%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/alpine/)
 
 # Quick reference (cont.)
 
@@ -62,7 +62,7 @@ WARNING:
 Use like you would any other base image:
 
 ```dockerfile
-FROM alpine:3.14
+FROM riscv64/alpine:3.14
 RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```
